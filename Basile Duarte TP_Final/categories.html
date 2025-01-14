@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gérer les Catégories</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Gestion des Catégories</h1>
+    </header>
+    <main>
+        <section id="add-category">
+            <h2>Ajouter une Catégorie</h2>
+            <form id="category-form">
+                <div class="row">
+                    <label for="newCategory">Nom de la catégorie :</label>
+                    <input type="text" id="newCategory" placeholder="Nom de la catégorie" required>
+                </div>
+                <button type="addCategory">Ajouter</button>
+            </form>
+        </section>
+    
+        <section id="update-category">
+            <h2>Modifier une Catégorie</h2>
+            <form id="update-category-form">
+                <div class="row">
+                    <label for="selectCategory">Catégorie existante :</label>
+                    <select id="selectCategory"></select>
+                </div>
+                <div class="row">
+                    <label for="updatedCategoryName">Nouveau nom :</label>
+                    <input type="text" id="updatedCategoryName" placeholder="Nouveau nom de la catégorie">
+                </div>
+                <button type="updateCategory">Modifier</button>
+            </form>
+        </section>
+    </main>
+
+    <section id="delete-category">
+        <h2>Supprimer une Catégorie</h2>
+        <form id="delete-category-form">
+            <div class="row">
+                <label for="selectCategoryToDelete">Catégorie existante :</label>
+                <select id="selectCategoryToDelete"></select>
+            </div>
+            <button type="submit">Supprimer</button>
+        </form>
+    </section>
+    
+    
+    <footer>
+        <button onclick="window.location.href='index.html'">Retour</button>
+    </footer>
+    <script src="JS/categories.js"></script>
+</body>
+</html>

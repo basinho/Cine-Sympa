@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CinemaSympa</title>
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1 id="nameSite">CinemaSympa</h1>
+      <input id="searchBar" type="text" placeholder="Rechercher un film..." />
+      <div id="film-button">
+        <button onclick="window.location.href='ajoutFilm.html'">
+          Gérez les films !
+        </button>
+        <button onclick="window.location.href='categories.html'">
+            Gérez les catégories !
+        </button>
+      </div>
+
+      <div id="categories"></div>
+      <div id="sort-options">
+        <label for="sort">Trier par :</label>
+        <select id="sort">
+          <option value="default">Par défaut</option>
+          <option value="likes">Nombre de likes</option>
+        </select>
+      </div>
+    </header>
+    <main id="main">
+      <section id="movies"></section>
+    </main>
+    <script src="JS/script.js"></script>
+  </body>
+</html>
